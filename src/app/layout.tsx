@@ -27,7 +27,7 @@ export default function RootLayout({
       </head>
       <body>
         <GlobalStateProvider theme={theme}>
-          <ThemeRegistry theme={theme}>{children}</ThemeRegistry>sx
+          <ThemeRegistry theme={theme}>{children}</ThemeRegistry>
         </GlobalStateProvider>
       </body>
     </html>

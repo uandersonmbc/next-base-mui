@@ -6,6 +6,7 @@ import { GlobalActionTypes } from '@/reducers/globalReducer';
 
 export default function Home() {
   const { dispatch } = useGlobalDispatch();
+
   return (
     <main>
       <h1>Home</h1>
