@@ -1,30 +1,24 @@
-'use client';
-import { Button } from '@mui/material';
+import { Typography } from '@mui/material';
 
-import { useGlobalDispatch } from '@/contexts/Global/Global';
-import { GlobalActionTypes } from '@/reducers/globalReducer';
+import InternalTemplate from '@/components/templates/InternalTemplate';
 
 export default function Home() {
-  const { dispatch } = useGlobalDispatch();
-
   return (
-    <main>
-      <h1>Home</h1>
-
-      <Button
-        onClick={() =>
-          dispatch({ type: GlobalActionTypes.SET_THEME, payload: 'dark' })
-        }
-      >
-        Dark
-      </Button>
-      <Button
-        onClick={() =>
-          dispatch({ type: GlobalActionTypes.SET_THEME, payload: 'light' })
-        }
-      >
-        Light
-      </Button>
-    </main>
+    <InternalTemplate>
+      <Typography paragraph>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus
+        non enim praesent elementum facilisis leo vel. Risus at ultrices mi
+        tempus imperdiet. Semper risus in hendrerit gravida rutrum quisque non
+        tellus. Convallis convallis tellus id interdum velit laoreet id donec
+        ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl
+        suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod
+        quis viverra nibh cras. Metus vulputate eu scelerisque felis imperdiet
+        proin fermentum leo. Mauris commodo quis imperdiet massa tincidunt. Cras
+        tincidunt lobortis feugiat vivamus at augue. At augue eget arcu dictum
+        varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt.
+        Lorem donec massa sapien faucibus et molestie ac.
+      </Typography>
+    </InternalTemplate>
   );
 }
